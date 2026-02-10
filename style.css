@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #f8c8dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    color: #b30059;
+}
+
+.buttons {
+    margin-top: 20px;
+    position: relative;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.yes-button {
+    background-color: #4CAF50;
+    color: white;
+    animation: pulse 1.5s infinite;
+}
+
+.no-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.image {
+    margin-top: 30px;
+    width: 200px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* ✨ fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.heart {
+    position: fixed;
+    bottom: -20px;
+    animation: floatUp 4s linear forwards;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.image {
+    width: 260px;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.sad {
+    animation: sadShake 0.5s infinite;
+}
+
+@keyframes sadShake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* 😄 laugh animation */
+.laugh {
+    animation: laugh 0.4s infinite;
+}
+
+@keyframes laugh {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.yes-button {
+    background: #4caf50;
+    color: white;
+}
+
+.no-button {
+    background: #f44336;
+    color: white;
+    position: relative;
+}
+
+.heart {
+    position: fixed;
+    bottom: -20px;
+    animation: floatUp 4s linear;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
