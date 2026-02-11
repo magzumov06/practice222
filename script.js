@@ -42,7 +42,7 @@ noButton.addEventListener("mouseenter", () => {
 function handleYesClick() {
     document.body.innerHTML = `
         <div class="container">
-            <h1>I knew it 😍💖</h1>
+            <h1>I knew it 💖</h1>
             <img src="cat1.png" class="image laugh">
         </div>
     `;
