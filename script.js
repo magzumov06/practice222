@@ -17,7 +17,7 @@ const maxFontSize = 120;
 
 noButton.addEventListener("mouseenter", () => {
 
-    catImage.src = "cat2.png";
+    catImage.src = "cat3.png";
     catImage.classList.add("sad");
     catImage.classList.remove("laugh");
 
